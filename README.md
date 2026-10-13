@@ -11,19 +11,19 @@ Part of [LawCodex](https://github.com/LawCodex): one public repository per juris
 
 Retrieved: **2026-10-13**. Language: Spanish (`es`).
 
-Status: **full** for laws in force (consolidated texts); repealed laws being completed
+Status: **full** (all laws listed by SINALEVI, current consolidated versions)
 
 ## What is covered
 
 | Category | Directory | Files |
 |---|---|---|
 | Constitución Política de la República de Costa Rica (1949, consolidated) and historical constitutions listed by SINALEVI | `constitucion/` | 15 |
-| Laws (leyes), by year of the law | `leyes/<year>/ley-<n>-id<scij>.md` | 16,539 |
+| Laws (leyes), by year of the law | `leyes/<year>/ley-<n>-id<scij>.md` | 21,263 |
 
 SINALEVI lists 21,263 laws (15,933 in force, 5,304 repealed, others annulled/unspecified).
 Texts were fetched in priority order: the Constitution and SINALEVI's *Normas usuales* (the
 commonly used norms per branch of law: codes and main statutes), then laws in force from the
-newest number down, then repealed laws. All laws in force and the repealed laws fetched so far are included (this file is updated when the run completes).
+newest number down, then repealed laws. All 21,263 laws listed (in force and repealed) are included.
 
 Front matter: `identifier` (Ley N°), `scij_id` (SINALEVI's IdFichaNorma), `status`
 (`in_force` = *Vigente*, `repealed` = *Derogada*), `version` ("n de m": version number of the
@@ -33,7 +33,6 @@ consolidated text), `date` (date of the law).
 
 - Executive decrees (decretos ejecutivos), regulations, international treaties (SINALEVI has
   them; not collected).
-- Laws not reached in this run (see above); re-running `scripts/cr_fetch.py texts` continues.
 
 ## Source
 

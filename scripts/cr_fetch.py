@@ -251,7 +251,7 @@ def convert():
         fm = yaml.safe_dump(front, allow_unicode=True, sort_keys=False, width=1000).strip()
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, "w", encoding="utf-8").write("\n".join(["---", fm, "---", "", f"# {title}", "",
-                                                          f"> SCIJ: {r.get('EstadoNorma')}; {r.get('VersionNorma')}.", "", md, ""]))
+                                                          f"> SCIJ: {r.get('EstadoNorma')}; {r.get('VersionNorma')}.", "", md, ""]).replace("\r", " "))
         n += 1
     print("converted", n)
 
