@@ -11,7 +11,7 @@ Part of [LawCodex](https://github.com/LawCodex): one public repository per juris
 
 Retrieved: **2026-10-13**. Language: Spanish (`es`).
 
-Status: ****full** for laws in force (consolidated texts); repealed laws being completed**
+Status: **full** for laws in force (consolidated texts); repealed laws being completed
 
 ## What is covered
 

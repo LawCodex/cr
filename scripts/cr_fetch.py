@@ -219,7 +219,7 @@ def convert():
                 buf.append(txt)
         if buf:
             parts.append(T.blocks_to_md(buf))
-        md = "\n\n".join(x for x in parts if x.strip())
+        md = "\n\n".join(x for x in parts if x.strip()).replace("\r", "")
         num = r["NumeroNormativa"]
         sub = r.get("IdSubNumeroNormativa") or "0"
         fecha = r.get("stringFechaNormativa") or ""
